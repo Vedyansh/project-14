@@ -60,11 +60,7 @@ function draw()  {
    // select_balloon = Math.round(random(1,4,2));
    select_balloon = Math.round(random(1,4));
    if (World.frameCount % 100 == 0) {
-    if (select_balloon == 1){
-      redBalloon;
-    }
-    }
-    switch(select_balloon ){
+   switch(select_balloon ){
        case 1: redBalloon();
        break;
        case 2:blueBalloon();
@@ -75,6 +71,9 @@ function draw()  {
        break;
        default:break;
        }
+   }
+    
+    
     //uncomment the correct switch statement
 
             // switch(select_balloon ){
